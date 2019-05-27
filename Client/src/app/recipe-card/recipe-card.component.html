@@ -1,0 +1,9 @@
+<div *ngFor="let recipe of recipes" class="side-by-side">
+  <div class="container" (click)="recipeCardClickHandler(recipe)">
+    <img src="{{recipe.image_url}}" class="img-tint">
+    <img [src]= "recipe.favourite ? 'assets/star.svg' : 'assets/star-off.svg'" class="overlay-top"
+         (click)="toggleFavourite($event, recipe)">
+    <img [src]="recipe.vegetarian ? 'assets/check-yes.svg' : 'assets/check-no.svg'" class="overlay-bottom">
+    <p class="overlay-middle recipe-label">{{recipe.title}}</p>
+  </div>
+</div>

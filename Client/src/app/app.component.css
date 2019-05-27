@@ -1,0 +1,35 @@
+.top-control-bar {
+  background: darkblue;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+#app-title {
+  color: white;
+  float: left;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.app-item-container {
+  color: white;
+  display: inline;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.app-item {
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.control-bar-item {
+  cursor: pointer;
+}
+
+#test {
+  background-color: red;
+}

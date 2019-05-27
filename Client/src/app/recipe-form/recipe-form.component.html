@@ -1,0 +1,33 @@
+<div class="container">
+  <h1>{{this.formLbl}}</h1>
+  <form id="form" (ngSubmit)="formSubmitClickHandler(recipeForm)" #recipeForm="ngForm">
+
+    <span>
+      <div class="form-item" style="float: left; width: 45%">
+        <label for="title">Title: </label>
+        <input type="text" id="title" class="form-control" ngModel name="titleField" required>
+      </div>
+      <div class="form-item"style="width: 45%; float: right">
+        <button type="submit" style="float: right">{{formLbl}}</button>
+      </div>
+    </span>
+
+    <span>
+      <textarea id="image" rows="20" class="form-item image-text-area form-control" name="imageField" ngModel required>Image Text</textarea>
+
+      <div class="form-item form-text">
+        <div>
+          <textarea id="description" rows="18" class="description-text-area form-control" name="descriptionField" ngModel required>Description Text</textarea>
+        </div>
+        <div style="float: left;">
+          <label for="vegetarian">Vegetarian: </label>
+          <input type="checkbox" id="vegetarian"  class="form-control" ngModel name="vegetarianCheckBox" required>
+
+          <label for="favourite">Favourite: </label>
+          <input type="checkbox" id="favourite" class="form-control" ngModel name="favouriteCheckBox" required>
+        </div>
+      </div>
+    </span>
+
+  </form>
+</div>

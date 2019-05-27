@@ -1,0 +1,13 @@
+<div class="top-control-bar">
+  <span class="control-bar-item">
+    <h1 id="app-title" (click)="homePageClickHandler()">{{title}}</h1>
+    <span class="app-item-container">
+      <h3 (click)="newRecipeClickHandler()" class="app-item">Create new Recipe</h3>
+      <h3 (click)="aboutClickHandler()" class="app-item">About</h3>
+    </span>
+  </span>
+</div>
+
+<div>
+ <router-outlet></router-outlet>
+</div>

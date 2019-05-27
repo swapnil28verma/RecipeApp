@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  margin: 10px auto;
+}
+
+#form {
+  margin: 15px;
+}
+
+.form-item {
+  padding: 20px;
+}
+
+.description-text-area {
+  width: 100%;
+  resize: none;
+}
+
+.image-text-area {
+  width: 25%;
+  resize: none;
+  float: left;
+}
+
+.form-image {
+  width: 25%;
+}
+
+.form-text {
+  width: 65%;
+  float: right;
+}
